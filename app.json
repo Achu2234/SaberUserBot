@@ -15,6 +15,7 @@
   "website": "https://github.com/Achu2234/SaberUserBot",
   "success_url": "https://t.me/Animemusicarchive6",
   "env": {
+    "ENV": 
     "API_ID": {
       "description": "Get this value from my.telegram.org.",
       "required": true
