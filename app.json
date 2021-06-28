@@ -7,7 +7,7 @@
       "required": true
     },
     "API_HASH": {
-      "description": "Get this value from my.telegram.org.",
+     h "description": "Get this value from my.telegram.org.",
       "required": true
     },
     "SESSION": {
