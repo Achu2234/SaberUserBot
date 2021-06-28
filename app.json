@@ -21,7 +21,7 @@
     "HEROKU_API": {
       "description": "Your heroku api key if using heroku.",
       "required": false
-    },
+    }.
     "HEROKU_APP_NAME": {
       "description": "Your heroku app name if using heroku.",
       "required": false
