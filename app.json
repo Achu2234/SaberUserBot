@@ -1,21 +1,7 @@
 {
   "name": "𝚂𝚊𝚋𝚎𝚛 𝚄𝚜𝚎𝚛𝚋𝚘𝚝",
-  "description": "𝐴 𝐴𝑑𝑣𝑎𝑛𝑐𝑒𝑑 𝑎𝑛𝑑 𝑝𝑜𝑤𝑒𝑟𝑓𝑢𝑙 𝑈𝑠𝑒𝑟𝑏𝑜𝑡 𝐹𝑜𝑟 𝐴𝑛𝑖𝑚𝑒 𝐿𝑜𝑣𝑒𝑟𝑠 ",
-  "logo": "https://telegra.ph/file/effaadb40c3e8e291a18f.jpg",
-    "keywords": [
-    "telegram",
-    "Anime Theme", 
-    "Fate/Zero", 
-    "userbot",
-    "plugin",
-    "modular",
-    "productivity"
-  ],
-  "repository": "https://github.com/Achu2234/SaberUserBot",
-  "website": "https://github.com/Achu2234/SaberUserBot",
-  "success_url": "https://t.me/Animemusicarchive6",
+  "description": "Saber, a telegram Anime userbot with MongoDB database",
   "env": {
-    "ENV": 
     "API_ID": {
       "description": "Get this value from my.telegram.org.",
       "required": true
@@ -35,7 +21,7 @@
     "HEROKU_API": {
       "description": "Your heroku api key if using heroku.",
       "required": false
-    }.
+    },
     "HEROKU_APP_NAME": {
       "description": "Your heroku app name if using heroku.",
       "required": false
@@ -57,4 +43,3 @@
     }
   }
 }
-  
