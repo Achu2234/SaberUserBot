@@ -1,1 +1,1 @@
-worker: python3 -m Saber
+worker: python3 -m SaberUB
