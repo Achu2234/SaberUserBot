@@ -6,7 +6,7 @@
       "description": "Get this value from my.telegram.org.",
       "required": true
     },
-    "API_HASH": {
+    "API_HASHl": {
       "description": "Get this value from my.telegram.org.",
       "required": true
     },
