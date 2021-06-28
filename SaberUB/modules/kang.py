@@ -1,5 +1,3 @@
-
-
 import io
 import os
 import random
@@ -12,7 +10,7 @@ from pyrogram.raw.types import InputStickerSetShortName
 from pyrogram.errors import YouBlockedUser, StickersetInvalid
 from SaberUB.helpers.pyrohelper import get_args
 from SaberUB import app, CMD_HELP
-from SaberUB import PREFIX
+from config import PREFIX
 
 CMD_HELP.update(
     {
