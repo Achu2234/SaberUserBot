@@ -1,5 +1,5 @@
 {
-  "name": "𝙎𝙖𝙗𝙚𝙧 𝙐𝘽",
+  "name": "Saber UserBot",
   "description": "Saber UB, a telegram Anime userbot with MongoDB database",
   "env": {
     "API_ID": {
