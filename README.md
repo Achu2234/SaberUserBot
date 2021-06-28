@@ -18,7 +18,7 @@ Don't forget to star this repo if you liked it.
 
 Enjoy Your Bot!!💝
 
-[![Saber logo](https://telegra.ph/file/effaadb40c3e8e291a18f.jpg)](https://t.me/Animemusicarchive6)
+[![Saber logo](https://telegra.ph/file/1170c355ab28bee6a654f.jpg)](https://t.me/Animemusicarchive6)
 
 # Support
 <a href="https://t.me/Animemusicarchive6"><img src="https://img.shields.io/badge/Join-Telegram%20Channel-red.svg?logo=Telegram"></a>
