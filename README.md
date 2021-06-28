@@ -4,7 +4,6 @@
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/f7c51539e67b483bb8d7749acca51d3a)](https://app.codacy.com/gh/Achu2234/SaberUserBot?utm_source=github.com&utm_medium=referral&utm_content=Achu2234/SaberUserBot-UB&utm_campaign=Badge_Grade_Settings)
 [![Python 3.6](https://img.shields.io/badge/Python-3.6%20or%20newer-blue.svg)](https://www.python.org/downloads/release/python-360/)
 
-![GitHub repo size](https://img.shields.io/github/repo-sizehttps:/Achu2234/SaberUserBot)
 [![Contact Me](https://img.shields.io/badge/Telegram-Contact%20Me-informational)](https://t.me/Yeageristbotsdev)
 
 <h1 align="center">⚡ 𝙎𝙖𝙗𝙚𝙧 𝙐𝘽 ⚡</h1>
