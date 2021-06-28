@@ -1,7 +1,7 @@
 import io
 import os
 import random
-import timeg
+import time
 
 from PIL import Image
 from pyrogram import emoji, filters
