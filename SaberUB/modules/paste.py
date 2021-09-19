@@ -1,10 +1,9 @@
-
 import asyncio
 import requests
 import aiohttp
 from pyrogram import filters
 from pyrogram.types import Message
-from Zect import app, CMD_HELP
+from SaberUB import app, CMD_HELP
 from config import PREFIX
 
 CMD_HELP.update(
