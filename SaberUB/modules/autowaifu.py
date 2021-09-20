@@ -46,7 +46,7 @@ async def is_harem_enabled(f, client, message):
 
 is_harem_enabled = filters.create(func=is_harem_enabled, name="is_harem_enabled")
 
-@app.on.message(filters.user(BOT_LIST) & ~filters.edited & is_harem_enabled & filters.group)
+@app.on_message(filters.user(BOT_LIST) & ~filters.edited & is_harem_enabled & filters.group)
 async def autowaifu(client, message):
     if message.photo:
 
