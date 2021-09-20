@@ -3,7 +3,19 @@ from pyrogram import filters
 import os
 from bs4 import BeautifulSoup
 import requests
-from SaberUB import app as Waifu, BOT_LIST
+from SaberUB import app as Waifu, BOT_LIST, CMD_HELP
+
+
+CMD_HELP.update(
+    {
+        "AutoProtecc": """
+『 **Auto Harem** 』
+  `addharem` -> Add a chat to your harem autoprotecc list.
+  `rmharem` -> Remove a chat from your harem autoprotecc list.
+"""
+    }
+)
+
 
 @Waifu.on_message()
 async def autowaifu(client, message):
