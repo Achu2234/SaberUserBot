@@ -21,8 +21,9 @@ CMD_HELP.update(
     }
 )
 
-@app.on_message(filters.command(["v"], PREFIX) & filters.me)
-async def stream(_, message: Message):
+@app.on_message(
+    filters.command(["v"], PREFIX) & filters.me
+)
     replied = m.reply_to_message
     if not replied:
         await m.reply("❌ **Please Reply To Video**")
@@ -51,8 +52,9 @@ async def stream(_, message: Message):
         await m.reply("❌ **Please Reply To Video**")
         return os.system("rm -rf downloads")
                 
-@app.on_message(filters.command(["stop"], PREFIX) & filters.me)
-async def stopvideo(_, message: Message):
+@app.on_message(
+    filters.command(["stop"], PREFIX) & filters.me
+)
     chat_id = m.chat.id
     try:
         await VIDEO_CALL[chat_id].stop()
