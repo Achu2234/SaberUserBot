@@ -4,7 +4,7 @@ import os
 from bs4 import BeautifulSoup as bs
 import requests
 from SaberUB import app, CMD_HELP
-from SaberUB.database.autoproteccdb import add_chat, is_chat_in_db, rm_chat
+from SaberUB.database.autowaifudb import add_chat, is_chat_in_db, rm_chat
 from config import PREFIX, BOT_LIST
 
 CMD_HELP.update(
