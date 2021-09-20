@@ -29,7 +29,7 @@
     "PREFIX": {
       "description": "Command handler.",
       "required": true,
-      "vale": "."
+      "value": "."
     },
     "BOT_LIST":{
       "description": "List id of bot for trigger autoprotecc, separate by space.",
