@@ -5,6 +5,7 @@ from pyrogram import filters, Client, idle
 from pyrogram.types import Message
 from config import API_ID, API_HASH, SESSION
 from SaberUB import app, CMD_HELP
+from config import PREFIX
 
 app = Client(SESSION, API_ID, API_HASH)
 group_call_factory = GroupCallFactory(app, GroupCallFactory.MTPROTO_CLIENT_TYPE.PYROGRAM)
@@ -19,7 +20,8 @@ CMD_HELP.update(
     }
 )
 
-@app.on_message(filters.outgoing & filters.command('v'))
+@app.on_message(
+    filters.command(["V"], PREFIX) & filters.me
 async def stream(client, m: Message):
     replied = m.reply_to_message
     if not replied:
