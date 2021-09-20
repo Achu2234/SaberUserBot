@@ -10,7 +10,7 @@ import logging
 import sys
 import time
 from pyrogram import Client, errors
-from config import API_HASH, API_ID, SESSION
+from config import API_HASH, API_ID, SESSION, BOT_LIST
 import logging
 
 import logging
