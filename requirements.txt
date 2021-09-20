@@ -13,4 +13,4 @@ asyncio
 pillow
 GitPython
 heroku3
-bs4
+
