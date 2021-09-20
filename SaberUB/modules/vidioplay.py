@@ -16,12 +16,13 @@ CMD_HELP.update(
         "Misc": """
 『 **Misc** 』
   `v` -> Reply To Video.
+  `stop` -> stop vidio
 """
     }
 )
 
-@app.on_message(filters.command(["V"], PREFIX) & filters.me
-async def stream(_, message: Message):
+@app.on_message(filters.command(["v"], PREFIX) & filters.me
+async def stopvide(_, message: Message):
     replied = m.reply_to_message
     if not replied:
         await m.reply("❌ **Please Reply To Video**")
@@ -49,3 +50,12 @@ async def stream(_, message: Message):
     else:
         await m.reply("❌ **Please Reply To Video**")
         return os.system("rm -rf downloads")
+                
+@app.on_message(filters.command(["stop"], PREFIX) & filters.me
+async def stream(_, message: Message):
+    chat_id = m.chat.id
+    try:
+        await VIDEO_CALL[chat_id].stop()
+        await m.reply("**⏹️ Stopped Streaming!**")
+    except Exception as e:
+        await m.reply(f"**🚫 Error** - `{e}`")
