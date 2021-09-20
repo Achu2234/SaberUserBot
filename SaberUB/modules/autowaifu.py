@@ -40,9 +40,9 @@ async def remove_nsfw(client, message):
 
 async def is_harem_enabled(f, client, message):
     if await is_chat_in_db(int(message.chat.id)):
-        return
+        return bool(True)
     else:
-        return
+        return bool(False)
 
 is_harem_enabled = filters.create(func=is_harem_enabled, name="is_harem_enabled")
 
