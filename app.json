@@ -31,6 +31,10 @@
       "required": true,
       "vale": "."
     },
+    "BOT_LIST":{
+      "description": "List id of bot for trigger autoprotecc, separate by space.",
+      "value": "792028928 1232515770 1964681186"
+    },
     "LOG_CHAT": {
       "description": "A private group id to store your logs.",
       "required": true
