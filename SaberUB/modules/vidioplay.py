@@ -21,7 +21,7 @@ CMD_HELP.update(
 )
 
 @app.on_message(filters.command(["V"], PREFIX) & filters.me
-async def stream(client, m: Message):
+async def stream(_, message: Message):
     replied = m.reply_to_message
     if not replied:
         await m.reply("❌ **Please Reply To Video**")
