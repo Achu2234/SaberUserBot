@@ -79,7 +79,7 @@ async def unban(_, message: Message):
 
 
 # Mute Permissions
-mute_permission = ChatPermissions(
+mute_permissions = ChatPermissions(
     can_send_messages=False,
     can_send_media_messages=False,
     can_send_stickers=False,
