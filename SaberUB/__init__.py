@@ -10,7 +10,7 @@ import logging
 import sys
 import time
 from pyrogram import Client, errors
-from config import API_HASH, API_ID, SESSION, BOT_LIST
+from config import API_HASH, API_ID, SESSION
 import logging
 
 import logging
@@ -30,6 +30,5 @@ StartTime = time.time()
 API_ID = API_ID
 API_HASH = API_HASH
 SESSION = SESSION
-BOT_LIST = {int(x) for x in os.environ.get("BOT_LIST", "").split()}
 
 app = Client(SESSION, api_id=API_ID, api_hash=API_HASH)
