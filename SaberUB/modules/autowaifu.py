@@ -1,7 +1,7 @@
 import time
 from pyrogram import filters
 import os
-from bs4 import BeautifulSoup
+from bs4 import BeautifulSoup as bs
 import requests
 from SaberUB import app, CMD_HELP
 from SaberUB.database.autoproteccdb import add_chat, is_chat_in_db, rm_chat
