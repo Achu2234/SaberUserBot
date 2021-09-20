@@ -3,9 +3,9 @@ from pyrogram import filters
 import os
 from bs4 import BeautifulSoup
 import requests
-from SaberUB import app as Waifu, BOT_LIST, CMD_HELP
+from SaberUB import app, CMD_HELP
 from SaberUB.database.autoproteccdb import add_chat, is_chat_in_db, rm_chat
-from config import PREFIX
+from config import PREFIX, BOT_LIST
 
 CMD_HELP.update(
     {
@@ -46,11 +46,11 @@ async def is_harem_enabled(f, client, message):
 
 is_harem_enabled = filters.create(func=is_harem_enabled, name="is_harem_enabled")
 
-@app.on.message(filters.user([BOT_LIST]) & ~filters.edited & is_harem_enabled & filters.group)
+@app.on.message(filters.user(BOT_LIST) & ~filters.edited & is_harem_enabled & filters.group)
 async def autowaifu(client, message):
     if message.photo:
 
-        if message.user.id in BOT_LIST:
+#        if message.user.id in BOT_LIST:
             dl = await app.download_media(message, "resources/")
             file = {"encoded_image": (dl, open(dl, "rb"))}
             grs = requests.post(
@@ -71,4 +71,5 @@ async def autowaifu(client, message):
             text = alls.text
             send = await app.send_message(message.chat.id, f"/protecc {text}")
             await sleep(5)
+            await send.delete()
             os.remove(dl)
