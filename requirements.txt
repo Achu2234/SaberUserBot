@@ -10,5 +10,4 @@ asyncio
 pillow
 GitPython
 heroku3
-py-Ultroid==2021.5.24
 
