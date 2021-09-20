@@ -79,19 +79,19 @@ async def unban(_, message: Message):
 
 
 # Mute Permissions
-mute_permission = ChatPermissions
-#    can_send_messages=False,
-#    can_send_media_messages=False,
-#    can_send_stickers=False,
-#    can_send_animations=False,
-#    can_send_games=False,
-#    can_use_inline_bots=False,
-#    can_add_web_page_previews=False,
-#    can_send_polls=False,
-#    can_change_info=False,
-#    can_invite_users=True,
-#    can_pin_messages=False,
-#)
+mute_permission = ChatPermissions(
+    can_send_messages=False,
+    can_send_media_messages=False,
+    can_send_stickers=False,
+    can_send_animations=False,
+    can_send_games=False,
+    can_use_inline_bots=False,
+    can_add_web_page_previews=False,
+    can_send_polls=False,
+    can_change_info=False,
+    can_invite_users=True,
+    can_pin_messages=False,
+)
 
 
 @app.on_message(filters.command("mute", PREFIX) & filters.me)
@@ -120,19 +120,19 @@ async def mute_hammer(_, message: Message):
 
 
 # Unmute permissions
-unmute_permissions = ChatPermissions
-#    can_send_messages=True,
-#    can_send_media_messages=True,
-#    can_send_stickers=True,
-#    can_send_animations=True,
-#    can_send_games=True,
-#    can_use_inline_bots=True,
-#    can_add_web_page_previews=True,
-#    can_send_polls=True,
-#    can_change_info=False,
-#    can_invite_users=True,
-#    can_pin_messages=False,
-$)
+unmute_permissions = ChatPermissions(
+    can_send_messages=True,
+    can_send_media_messages=True,
+    can_send_stickers=True,
+    can_send_animations=True,
+    can_send_games=True,
+    can_use_inline_bots=True,
+    can_add_web_page_previews=True,
+    can_send_polls=True,
+    can_change_info=False,
+    can_invite_users=True,
+    can_pin_messages=False,
+)
 
 
 @app.on_message(filters.command("unmute", PREFIX) & filters.me)
