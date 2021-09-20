@@ -4,12 +4,20 @@ from pytgcalls import GroupCallFactory
 from pyrogram import filters, Client, idle
 from pyrogram.types import Message
 from config import API_ID, API_HASH, SESSION
+from SaberUB import app, CMD_HELP
 
 app = Client(SESSION, API_ID, API_HASH)
 group_call_factory = GroupCallFactory(app, GroupCallFactory.MTPROTO_CLIENT_TYPE.PYROGRAM)
 VIDEO_CALL = {}
 
-
+CMD_HELP.update(
+    {
+        "Misc": """
+『 **Misc** 』
+  `v` -> Reply To Video.
+"""
+    }
+)
 
 @app.on_message(filters.outgoing & filters.command('v'))
 async def stream(client, m: Message):
