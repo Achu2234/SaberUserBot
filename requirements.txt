@@ -1,7 +1,8 @@
 TgCrypto
 ffmpeg-python
-pyrogram
+git+https://github.com/pyrogram/pyrogram@master
 aiohttp==3.6.2
+pytgcalls==3.0.0.dev10
 google_trans_new
 pymongo
 motor
