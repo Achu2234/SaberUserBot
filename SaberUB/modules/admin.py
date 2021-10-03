@@ -76,10 +76,8 @@ async def unban(_, message: Message):
             await message.edit("**I can't unban this user.**")
     else:
         await message.edit("**Am I an admin here?**")
-
-
-# Mute Permissions
-await bot.restrict_chat_member( query.message.chat.id, user_id, ChatPermissions( can_send_messages=True, can_send_media_messages=True, can_send_stickers=True, can_send_animations=True, can_send_games=True, can_use_inline_bots=True, can_add_web_page_previews=True, can_send_polls=True, can_change_info=True, can_invite_users=True, can_pin_messages=True ) )
+        # Mute Permissions
+    await bot.restrict_chat_member( query.message.chat.id, user_id, ChatPermissions( can_send_messages=True, can_send_media_messages=True, can_send_stickers=True, can_send_animations=True, can_send_games=True, can_use_inline_bots=True, can_add_web_page_previews=True, can_send_polls=True, can_change_info=True, can_invite_users=True, can_pin_messages=True ) )
 
 @app.on_message(filters.command("mute", PREFIX) & filters.me)
 async def mute_hammer(_, message: Message):
