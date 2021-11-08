@@ -1,6 +1,3 @@
-
-# All rights reserved.
-
 import re
 
 from pyrogram import filters
